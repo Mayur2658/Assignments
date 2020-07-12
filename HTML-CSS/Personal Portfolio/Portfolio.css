@@ -1,0 +1,164 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.8em;
+    font-weight: 400;
+    color: #666;
+}
+
+.img1,
+.img2,
+.img3 {
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img1 {
+    background-image: url('1.jpg');
+    min-height: 100%;
+}
+
+.img2 {
+    background-image: url('2.jpg');
+    min-height: 400px;
+}
+
+.section {
+
+    padding: 60px 80px;
+}
+
+.sec1 {
+    background-image: url("4.jpg");
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    text-align: center;
+}
+
+.sec2 {
+    background-image: url("4.jpg");
+    position: relative;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+
+}
+
+.txt {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.txt .border {
+
+    color: #fff;
+    padding: 20px;
+
+}
+
+.txt .border.trans {
+    background-color: transparent;
+}
+
+.text {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    color: #fff;
+    float: left;
+    width: 50%;
+    padding: 30px;
+    text-transform: capitalize;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: block;
+    clear: none;
+   
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+
+
+.nav-list a {
+    display: flex;
+    font-size: 1em;
+    padding: 2rem;
+}
+
+nav a:hover{
+    color: greenyellow;
+}
+nav a:link{
+    color: coral;
+}
+nav a:visited{
+    color: coral;
+}

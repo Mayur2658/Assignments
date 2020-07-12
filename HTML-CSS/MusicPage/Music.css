@@ -1,0 +1,131 @@
+body, html
+{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.8em;
+    font-weight: 400;
+    color: #666;
+}footer {
+    text-align: center;
+    padding: 3px;
+    background-color: gray;
+    color: white;
+  }
+.txt
+{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 8px;
+    
+}
+.txt .border
+{
+   
+    color: #fff;
+    padding: 20px;
+
+}
+.txt .border.trans{
+    background-color: transparent;
+}
+.img1,.img2,.img3
+{
+    position: relative;
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.text {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 8px;
+ 
+}
+.img1
+{
+    background-image: url('1.jpg');
+    min-height:100%;
+}
+.section
+{
+    text-align: center;
+    padding: 50px 80px;
+}
+.sec1
+{
+    background-color: rgb(70, 68, 68);
+    color: #fff;
+}
+.sec2{
+    background-color: white;
+}
+.sec3{
+    background-image: url(3.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li p {
+    color: wheat;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-left: 10px;
+
+}
+.button {
+    background-color: rgb(160, 10, 10);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

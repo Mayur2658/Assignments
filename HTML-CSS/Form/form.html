@@ -1,0 +1,80 @@
+<html>
+
+<head>
+
+	<Title>
+		Survey Form
+	</Title>
+	<link rel="stylesheet" href="Form.css">
+	
+
+</head>
+
+<body>
+	<div class="container">
+		<h2>Survey Form</h2>
+		<label>This survey form is created for capgemini as assignment </label>
+		<form>
+			<div>
+				<div>
+					<input placeholder="Full Name" type="text" required>
+				</div>
+				<div>
+					<input placeholder="Phone Number" type="tel" required>
+				</div>
+				<div>
+					<input placeholder="Email Address" type="email" required>
+				</div>
+				<div>
+					<label>Gender</label>
+					<div>
+						<label>
+							<input type="radio" name="set_1" checked="checked">Male
+						</label>
+					</div>
+					<div>
+						<label>
+							<input type="radio" name="set_1">Female
+						</label>
+					</div>
+				</div>
+				
+				<div>
+					<label>Your City (single-select)</label>
+					<select id>
+						<option disabled selected value="--">Select Your City</option>
+						<option value="Bangalore">Bangalore</option>
+						<option value="Chennai">Chennai</option>
+						<option value="Kolkata">Kolkata</option>
+					</select>
+				</div>
+				<div>
+					<label>Favourite Foods (multi-select)</label>
+					<select multiple>
+						<option value="Cheese">Cheese</option>
+						<option value="Bacon">Bacon</option>
+						<option value="Pasta">Pasta</option>
+						<option value="Pizza">Pizza</option>
+					</select>
+				</div>
+				<div>
+					<label>Message (textarea)</label>
+					<div>
+						<textarea placeholder="Eg. Enter your messages here"></textarea>
+					</div>
+				</div>
+				<div>
+					<label>Attach file</label>
+					<div>
+						<input type="file" id>
+					</div>
+				</div>
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

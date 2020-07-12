@@ -8,14 +8,24 @@
   left: 65%;
   transform: translate(-50%, -50%);
 }
+h1{
+    color: forestgreen;
+}
 
 html{
     background-color: aliceblue;
 }
 h2{
     text-align: center;
+    color: darkcyan;
 }
 p, ul{
     margin-left: 15%;
     margin-right: 14%;
+}
+.end{
+    color: brown;
+    font-family: sans-serif;
+    font-style: italic;
+    text-align: center;  
 }
