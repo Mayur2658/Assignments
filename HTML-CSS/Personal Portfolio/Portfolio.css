@@ -165,6 +165,9 @@ nav a:hover{
 nav a:visited{
     color: coral;
 }
+nav a:link{
+    color: coral;
+}
 div.polaroid {
     width: 32%;
     background-color: white;

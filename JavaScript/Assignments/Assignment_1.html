@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>
+        Assignment 1
+    </title>
+</head>
+<body style="text-align: center;" >
+  <label>Fahrenheit: </label>
+  <input id="inputFahrenheit" type="number" name="input" placeholder="Fahrenheit" required>
+</p>
+<input type="submit" onclick="temperatureConverter()" value="Submit" />
+ 
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter() {
+  valNum = document.getElementById("inputFahrenheit").value;
+  
+
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8 + " degree celcius";
+ 
+}
+</script>
+
+
+</body>
+
+</html>
