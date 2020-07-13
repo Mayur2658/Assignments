@@ -1,3 +1,6 @@
+body{
+    background-color: wheat;
+}
 .container {
     position: relative;
     text-align: center;

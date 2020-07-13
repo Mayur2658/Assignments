@@ -17,7 +17,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .img1 {
@@ -27,8 +27,11 @@ html {
 
 .img2 {
     background-image: url('2.jpg');
-    min-height: 400px;
+    min-height: 600px;
+    color: #fff;
+   
 }
+
 
 .section {
 
@@ -42,7 +45,7 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     color: black;
     text-align: center;
 }
@@ -56,7 +59,13 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: black;
+    
 
+}
+.sec1 img{
+    float: left;
+    width: 30%;
+    padding-right: 10px;
 }
 
 .txt {
@@ -96,28 +105,24 @@ h2 {
     text-align: center;
 }
 
-
-
-* {
-    box-sizing: border-box;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-    color: #fff;
+div.polaroid {
+    width: 32%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
     float: left;
-    width: 50%;
-    padding: 30px;
-    text-transform: capitalize;
+    margin-left: 10px;
+    margin-top: 20px;
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: block;
-    clear: none;
-   
+div.container {
+    text-align: center;
+    padding: 10px 20px;
 }
+
+
+
+
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -156,9 +161,22 @@ h2 {
 nav a:hover{
     color: greenyellow;
 }
-nav a:link{
-    color: coral;
-}
+
 nav a:visited{
     color: coral;
+}
+div.polaroid {
+    width: 32%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 100px;
+}
+
+div.container {
+    text-align: center;
+    padding: 10px 20px;
+    color: #000;
 }
