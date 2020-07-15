@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Click on Button to check your day</h1>
+    <button type="button" onclick="outputMessage()">Check your day</button>
+    <script>
+        function randomMessage() {
+            if (Math.random() < 0.5) {
+                return ("Have a GOOD day!");
+            } else {
+                return ("Have a BAD day!");
+            }
+        }
+
+        function outputMessage() {
+            document.write("<h1 style='font-size: 600%'>" + randomMessage() + "</h1>");
+        }
+    </script>
+</body>
+
+</html>

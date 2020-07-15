@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1> Longest String without a & b</h1>
+    Enter String: <input type="text" id="string">
+    <button type="button" onclick="longestToken(document.getElementById('string').value)"> Generate </button>
+    <p> Output: <Span id="output"></Span> </p>
+    <script>
+        function longestToken(string) {
+            var tokens = string.split(/[ab]+/);
+            var longest = "";
+            for (var i = 0; i < tokens.length; i++) {
+                if (tokens[i].length > longest.length) {
+                    longest = tokens[i];
+                }
+            }
+            document.getElementById("output").innerHTML = longest;
+        }
+    </script>
+</body>
+
+</html>

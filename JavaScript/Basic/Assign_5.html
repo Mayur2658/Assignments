@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1> Concatenated String</h1>
+    Enter no. <input type="number" id="num" name="num" min="1" required />
+    Enter a Short String <input type="text" id="word" name="word" required />
+    <button
+        onclick="padChars(document.getElementById('num').value, document.getElementById('word').value)">Find</button>
+    <p> Output: <Span id="output"></Span> </p>
+    <script>
+        function padChars(n, filler) {
+            var result = "";
+            for (var i = 0; i < n; i++) {
+                result = result + filler;
+            }
+            document.getElementById('output').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>

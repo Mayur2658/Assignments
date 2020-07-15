@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1> Number of times roll a die to get a 6</h1>
+    <button
+        onclick="numRollsToGetSix()">Find</button>
+    <p> Output: <Span id="output"></Span> </p>
+    <script>
+        function numRollsToGetSix() {
+            var rolls = 1;
+            while (Math.random() < 5 / 6) {
+                rolls++;
+            }
+            document.getElementById("output").innerHTML = rolls;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1> Array with random numbers</h1>
+    <button type="button" onclick="ArrayFun()"> Generate random</button>
+     <p> Output: <Span id="output"></Span> </p>
+    <script>
+        function ArrayFun(){
+        var fourNums = [ Math.random(), Math.random(), Math.random(), Math.random() ];
+        
+        document.getElementById("output").innerHTML = fourNums.join("<br>");
+        }
+    </script>
+</body>
+
+</html>

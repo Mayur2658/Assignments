@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1> Return number for string</h1>
+    <button type="button" onclick="arrayFun()"> Generate </button>
+    <p> Output: <Span id="output" ></Span> </p>
+    <script>
+        function numberArray(stringArray) {
+            var nums = new Array(stringArray.length);
+            for (var i = 0; i < stringArray.length; i++) {
+                nums[i] = parseFloat(stringArray[i]);
+            }
+            return (nums);
+        }
+
+        function arrayFun() {
+            var strings = ["1.2", "2.3", "3.4"];
+            var nums = numberArray(strings);
+            document.getElementById("output").innerHTML = nums;
+        }
+    </script>
+</body>
+
+</html>

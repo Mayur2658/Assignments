@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+</head>
+<body>
+    <h1> Calculate No.of Heads</h1>
+    Enter no. Of Flips <input type="number" id="num" name="num" min="1" required />
+    <button onclick="numHeads(document.getElementById('num').value)" >Calculate</button>
+    Output:<p id="output"></p>
+    <script>
+        function flipCoin() {
+            if (Math.random() < 0.5) {
+                return ("Heads");
+            } else {
+                return ("Tails");
+            }
+        }
+        
+        function numHeads(num) {
+            var numOfHeads = 0;
+            for (var i = 0; i < num; i++) {
+                if (flipCoin() == "Heads") {
+                    numOfHeads++;
+                }
+            }
+            document.getElementById("output").innerHTML = numOfHeads ;
+        }
+        
+    </script>
+</body>
+</html>
