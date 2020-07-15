@@ -35,12 +35,36 @@ function myFunction() {
             break;
         case "Mean":
         case "6":
-            x = prompt("Enter Base : ");
-            y = prompt("Enter exponent : ");
-            document.getElementById("ans").innerHTML = Math.pow(Number(x), Number(y));
+            var i = 0;
+            var sum = 0; 
+            do {
+                var number = prompt("Please Enter a Number");
+                if (number != "***") {
+                    sum += parseInt(number); 
+                } else {
+                    break;
+                }
+                i++;
+            }
+            while (i < 10);
+            document.getElementById("ans").innerHTML = sum / i;
+            break;
+        case "Quit":
+        case "7":
+            c = prompt("Are you sure you want to Quit? \n 1. Yes \n 2. No");
+
+            switch (c) {
+                case "Yes":
+                case "1":
+                    alert("Thank You");
+                    break;
+                case "No":
+                case "2":
+                    myFunction();
+            }
             break;
         default:
             alert("Entered a wrong choice. Please try again.");
-            
+
     }
 }

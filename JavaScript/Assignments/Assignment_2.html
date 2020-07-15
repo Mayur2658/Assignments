@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Assignment 2
+    </title>
+</head>
+
+<body style="text-align: center;">
+    <button onclick="myFunc()"> Enter Numbers</button>
+    <script>
+        function myFunc(){
+        var i = 0;
+        var j;
+        do {
+            var x = prompt("Enter the number");
+            document.write("input: " + Number(x) + " : Output : ");
+            for (j = 0; j < Number(x); j++) {
+                document.write( " *");
+            }
+            document.write("<br>");
+            i++;
+        } while (i < 3);
+    }
+    </script>
+
+
+</body>
+
+</html>
